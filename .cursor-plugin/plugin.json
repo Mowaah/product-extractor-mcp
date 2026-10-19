@@ -1,0 +1,20 @@
+{
+  "name": "product-extractor",
+  "displayName": "Product Page Extractor",
+  "version": "1.0.0",
+  "description": "Product URL or HTML to JSON (price, stock, brand, images) with price_source, for price checks and catalog enrichment.",
+  "author": {
+    "name": "Mohamed Zaghloul",
+    "email": "mohamed.bahaa5300@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "ecommerce",
+    "product",
+    "price",
+    "scraping",
+    "mcp"
+  ],
+  "logo": "logo.png",
+  "mcpServers": ".mcp.json"
+}
