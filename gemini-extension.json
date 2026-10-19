@@ -1,0 +1,8 @@
+{
+  "name": "product-extractor",
+  "version": "1.0.0",
+  "description": "Product page URL or raw HTML to clean JSON, with price_source showing where the price came from.",
+  "mcpServers": {
+    "product-extractor": { "httpUrl": "https://product-extractor.mohamed-bahaa53000.workers.dev/demo/mcp" }
+  }
+}
