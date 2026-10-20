@@ -2,7 +2,31 @@
 
 <img src="logo.png" width="96" alt="Product Page Extractor logo">
 
-**Give it a product page URL, or HTML you already have, and get back clean JSON:** name, brand, price, currency, stock, SKU/GTIN/MPN, images, rating, and every offer.
+**For e-commerce and pricing teams: turn any product page URL (or HTML you already have) into clean JSON with price, stock, brand and identifiers.**
+
+**1. Connect** (free, no key; works in Claude Desktop, Cursor, Cline, VS Code and any client that supports remote Streamable HTTP):
+
+```json
+{
+  "mcpServers": {
+    "product-extractor": {
+      "url": "https://product-extractor.mohamed-bahaa53000.workers.dev/demo/mcp"
+    }
+  }
+}
+```
+
+**2. Ask:** *"What's the price and stock status of https://www.allbirds.com/products/mens-tree-runners?"* Your agent calls:
+
+```json
+{"name":"extract_product","arguments":{"url":"https://www.allbirds.com/products/mens-tree-runners"}}
+```
+
+**3. Get** (real output from the free demo endpoint, trimmed):
+
+```json
+{"name":"Men's Tree Runner","brand":"Allbirds","price":100,"currency":"USD","in_stock":true,"price_source":"json-ld"}
+```
 
 ## What makes it different
 
@@ -11,12 +35,6 @@
 - **Returns every offer, not just the first price:** variants, sellers and sale prices, up to 50 per page.
 - **LLM-ready Markdown** of the page with `include=markdown`, or the raw JSON-LD blocks with `include=jsonld`.
 - **MCP-native with a free, keyless demo endpoint**, so an agent can try it with one line of config.
-
-Example (live, from the free demo):
-
-```json
-{"name":"Men's Tree Runner","brand":"Allbirds","price":100,"currency":"USD","in_stock":true,"price_source":"json-ld"}
-```
 
 It doesn't get past anti-bot pages (Amazon, Best Buy, REI) and doesn't run JavaScript. For those, fetch the HTML yourself and pass it in.
 
