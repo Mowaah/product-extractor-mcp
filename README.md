@@ -38,6 +38,10 @@
 
 It doesn't get past anti-bot pages (Amazon, Best Buy, REI) and doesn't run JavaScript. For those, fetch the HTML yourself and pass it in.
 
+## No-code version
+
+Not building an agent? **[Try it free in your browser](https://product-extractor.mohamed-bahaa53000.workers.dev/demo/v1/extract?url=https://www.allbirds.com/products/mens-tree-runners)**: no key or sign-up, 10 pages a day. Swap the `url=` value for any product page and you get the JSON back.
+
 ## Try it free
 
 - **No key, right now:** point any MCP client at `https://product-extractor.mohamed-bahaa53000.workers.dev/demo/mcp` (10 tool calls per IP per day).
