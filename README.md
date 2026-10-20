@@ -42,7 +42,6 @@ It doesn't get past anti-bot pages (Amazon, Best Buy, REI) and doesn't run JavaS
 
 - **No key, right now:** point any MCP client at `https://product-extractor.mohamed-bahaa53000.workers.dev/demo/mcp` (10 tool calls per IP per day).
 - **Free RapidAPI plan:** 50 requests/month on the [Basic plan](https://rapidapi.com/MohamedBahaa/api/product-page-extractor/pricing), no card needed. Pro is $9.99 for 5,000.
-- **Using n8n?** Get [competitor price monitoring installed in your n8n for $149](https://mohabaha0.gumroad.com/l/n8n-setup), done for you.
 
 This is a **hosted (remote) MCP server** using Streamable HTTP. There's nothing to install or run locally. This repository holds only the documentation and the MCP Registry manifest; the server code is not open source.
 
